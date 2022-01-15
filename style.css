@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Lexend Deca";
+}
+
+body,
+html {
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+footer {
+  margin: 1rem 0;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+main {
+  background-color: red;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  width: 800px;
+  border-radius: 10px;
+  overflow: hidden;
+  color: white;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display";
+}
+
+img {
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+h1,
+p,
+.learn-more-button {
+  margin-left: 2.5rem;
+  margin-right: 4rem;
+}
+
+p {
+  font-size: 0.85rem;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.5rem;
+  margin-bottom: 4.5rem;
+}
+
+h2 {
+  font-size: 0.85rem;
+}
+
+.container {
+  padding-bottom: 2.5rem;
+}
+
+.learn-more-button {
+  position: relative;
+  background-color: white;
+  width: auto;
+  max-width: 8rem;
+  text-align: center;
+  padding: 0.7rem 1rem;
+  border-radius: 100px;
+  border: 1px solid white;
+  transition: all 0.2s ease-in-out;
+}
+
+.sedans-container {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.sedans-container .learn-more-button {
+  color: hsl(31, 77%, 52%);
+}
+
+.sedans-container .learn-more-button:hover {
+  background-color: hsl(31, 77%, 52%);
+  color: white;
+  cursor: pointer;
+}
+
+.suvs-container {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.suvs-container .learn-more-button {
+  color: hsl(184, 100%, 22%);
+}
+
+.suvs-container .learn-more-button:hover {
+  background-color: hsl(184, 100%, 22%);
+  color: white;
+  cursor: pointer;
+}
+
+.luxury-container {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.luxury-container .learn-more-button {
+  color: hsl(179, 100%, 13%);
+}
+
+.luxury-container .learn-more-button:hover {
+  background-color: hsl(179, 100%, 13%);
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    padding-top: 2rem;
+    height: auto;
+  }
+  main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 0 auto;
+    width: 400px;
+  }
+  .learn-more-button {
+    max-width: 8rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    padding-top: 2rem;
+    height: auto;
+  }
+  main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 0 auto;
+    width: 60%;
+  }
+}
