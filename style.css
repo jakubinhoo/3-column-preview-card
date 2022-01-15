@@ -154,6 +154,9 @@ h2 {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     margin: 0 auto;
-    width: 60%;
+    width: 65%;
+  }
+  p {
+    margin-bottom: 2.5rem;
   }
 }
